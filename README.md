@@ -3,9 +3,9 @@
 This project contains an application built with React that integrates with Google Cloud Platform APIs using OAuth 2.0. It includes features like user authentication, image analysis, and natural language processing.
 
 ## Google Authentication
-![Project Logo](D:\CC_Lab\project\myproject\images\AuthScreen.png)
 
 ## Fetching cloud-vision and NLP API 
+![Project Logo](D:\CC_Lab\project\myproject\images\AuthScreen.png)
 ![Project Logo](D:\CC_Lab\project\myproject\images\MainScreen.png)
 
 ## Getting Started with Create React App
