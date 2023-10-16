@@ -11,7 +11,7 @@ function MainScreen() {
   const [imageAnalysis, setImageAnalysis] = useState([]);
   const [textAnalysis, setTextAnalysis] = useState([]);
   const APIKEY =
-  'AIzaSyAZKf0t6YWgrShhEjOFV55I9WlU04UH7PM';
+  process.env.API_KEY;
   const handleImageAnalysis = async () => {
     try {
       const response = await axios.post(

@@ -33,7 +33,7 @@ function Signup() {
             <h2>Experiment No. 5</h2>
           </div>
           <div className="google-login">
-            <GoogleOAuthProvider clientId='178873698881-2oatlpis7dsjjrmo312eutc8t1vspo47.apps.googleusercontent.com'>
+            <GoogleOAuthProvider clientId={process.env.Client_ID}>
               <GoogleLogin
                 onSuccess={handleSignin}
                 onError={() => {
