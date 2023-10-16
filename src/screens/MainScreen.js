@@ -10,7 +10,8 @@ function MainScreen() {
   const [textInput, setTextInput] = useState('');
   const [imageAnalysis, setImageAnalysis] = useState([]);
   const [textAnalysis, setTextAnalysis] = useState([]);
-  const APIKEY = process.env.API_KEY;
+  const APIKEY =
+  'AIzaSyAZKf0t6YWgrShhEjOFV55I9WlU04UH7PM';
   const handleImageAnalysis = async () => {
     try {
       const response = await axios.post(

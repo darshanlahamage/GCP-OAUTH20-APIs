@@ -2,7 +2,6 @@ import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
 import googleLogo from '../Google__G__Logo.svg.webp';
 import jwt_decode from 'jwt-decode';
 import { useUser } from '../UserContext';
-import MainScreen from './MainScreen';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Signup.css';
@@ -34,7 +33,7 @@ function Signup() {
             <h2>Experiment No. 5</h2>
           </div>
           <div className="google-login">
-            <GoogleOAuthProvider clientId={process.env.Client_ID}>
+            <GoogleOAuthProvider clientId='178873698881-2oatlpis7dsjjrmo312eutc8t1vspo47.apps.googleusercontent.com'>
               <GoogleLogin
                 onSuccess={handleSignin}
                 onError={() => {
