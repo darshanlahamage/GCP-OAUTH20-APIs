@@ -15,7 +15,7 @@ function MainScreen() {
   const handleImageAnalysis = async () => {
     try {
       const response = await axios.post(
-        `https://vision.googleapis.com/v1/images:annotate?key=${APIKEY}`,
+        `https://vision.googleapis.com/v1/images:annotate?key=AIzaSyAZKf0t6YWgrShhEjOFV55I9WlU04UH7PM`,
         {
           requests: [
             {
@@ -37,7 +37,7 @@ function MainScreen() {
   const handleTextAnalysis = async () => {
     try {
       const response = await axios.post(
-        `https://language.googleapis.com/v1/documents:analyzeEntities?key=${APIKEY}`,
+        `https://language.googleapis.com/v1/documents:analyzeEntities?key=AIzaSyAZKf0t6YWgrShhEjOFV55I9WlU04UH7PM`,
         {
           document: {
             content: textInput,
@@ -47,6 +47,7 @@ function MainScreen() {
       );
 
       setTextAnalysis(response.data.entities);
+      console.log(response.data)
     } catch (error) {
       console.error('NLP API error', error);
     }
